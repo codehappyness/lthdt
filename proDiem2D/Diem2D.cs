@@ -8,6 +8,7 @@
 
         public void Nhap()
         {
+          // Nhap du lie
             Console.Write("Nhap x:");
             x = int.Parse(s: Console.ReadLine()!);
             Console.Write("Nhap y:");
