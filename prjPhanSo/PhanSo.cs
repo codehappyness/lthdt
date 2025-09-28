@@ -47,9 +47,9 @@
             RutGon();
         }
 
-        public void Xuat()
+        public override string ToString()
         {
-            Console.WriteLine($"{tuSo}/{mauSo}");
+            return $"{tuSo}/{mauSo}";
         }
 
         public void RutGon()
@@ -102,7 +102,7 @@
             return new PhanSo(this.tuSo * b.mauSo, this.mauSo * b.tuSo);
         }
 
-        public  PhanSo Cong(int n)
+        public PhanSo Cong(int n)
         {
             return new PhanSo(this.tuSo + n * this.mauSo, this.mauSo);
         }
@@ -119,7 +119,7 @@
             return new PhanSo(a.tuSo * n, a.mauSo);
         }
 
-        public  PhanSo Chia(int n)
+        public PhanSo Chia(int n)
         {
             if (n == 0)
                 throw new DivideByZeroException("Khong the chia cho 0");
