@@ -23,7 +23,7 @@
 
         public PhanSo(int ts, int ms)
         {
-            if (mauSo == 0)
+            if (ms == 0)
                 throw new ArgumentException("Mau so khong duoc bang 0");
 
             this.tuSo = ts;
@@ -63,6 +63,7 @@
             }
         }
 
+        // Uoc chung lon nhat
         private int GCD(int a, int b)
         {
             while (b != 0)

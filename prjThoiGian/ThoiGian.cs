@@ -1,5 +1,4 @@
-﻿//using System;
-
+﻿
 namespace prjThoiGian
 {
     public class ThoiGian
