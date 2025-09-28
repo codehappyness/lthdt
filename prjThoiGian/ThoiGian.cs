@@ -69,19 +69,19 @@ namespace prjThoiGian
         }
 
 
-        public void TangGiay()
+        public void Tang()
         {
             giay++;
             LamTron();
         }
 
-        public void TangGiay(int n)
+        public void Tang(int n)
         {
             giay += n;
             LamTron();
         }
 
-        public void TangThoiGian(ThoiGian tg)
+        public void Tang(ThoiGian tg)
         {
             gio += tg.getGio();
             phut += tg.getPhut();

@@ -8,12 +8,14 @@
 
         public int getTuSo()
         {
-            return this.tuSo; 
+            return this.tuSo;
         }
-        public int getMauSo(){
-          return this.mauSo;
 
-        } 
+        public int getMauSo()
+        {
+            return this.mauSo;
+
+        }
 
         public PhanSo()
         {
@@ -75,34 +77,34 @@
             return a;
         }
 
-        public static PhanSo Cong(PhanSo a, PhanSo b)
+        public PhanSo Cong(PhanSo b)
         {
 
-            return new PhanSo(a.tuSo * b.mauSo + b.tuSo * a.mauSo, a.mauSo * b.mauSo);
+            return new PhanSo(this.tuSo * b.mauSo + b.tuSo * this.mauSo, this.mauSo * b.mauSo);
         }
 
-        public static PhanSo Tru(PhanSo a, PhanSo b)
+        public PhanSo Tru(PhanSo b)
         {
 
-            return new PhanSo(a.tuSo * b.mauSo - b.tuSo * a.mauSo, a.mauSo * b.mauSo);
+            return new PhanSo(this.tuSo * b.mauSo - b.tuSo * this.mauSo, this.mauSo * b.mauSo);
         }
 
-        public static PhanSo Nhan(PhanSo a, PhanSo b)
+        public PhanSo Nhan(PhanSo b)
         {
 
-            return new PhanSo(a.tuSo * b.tuSo, a.mauSo * b.mauSo);
+            return new PhanSo(this.tuSo * b.tuSo, this.mauSo * b.mauSo);
         }
 
-        public static PhanSo Chia(PhanSo a, PhanSo b)
+        public PhanSo Chia(PhanSo b)
         {
             if (b.tuSo == 0)
                 throw new DivideByZeroException("Khong the chia cho 0");
-            return new PhanSo(a.tuSo * b.mauSo, a.mauSo * b.tuSo);
+            return new PhanSo(this.tuSo * b.mauSo, this.mauSo * b.tuSo);
         }
 
-        public static PhanSo Cong(PhanSo a, int n)
+        public  PhanSo Cong(int n)
         {
-            return new PhanSo(a.tuSo + n * a.mauSo, a.mauSo);
+            return new PhanSo(this.tuSo + n * this.mauSo, this.mauSo);
         }
 
         public static PhanSo Tru(PhanSo a, int n)
@@ -117,11 +119,11 @@
             return new PhanSo(a.tuSo * n, a.mauSo);
         }
 
-        public static PhanSo Chia(PhanSo a, int n)
+        public  PhanSo Chia(int n)
         {
             if (n == 0)
                 throw new DivideByZeroException("Khong the chia cho 0");
-            return new PhanSo(a.tuSo, a.mauSo * n);
+            return new PhanSo(this.tuSo, this.mauSo * n);
         }
 
         // ---- So sánh ----
