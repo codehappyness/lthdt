@@ -21,13 +21,13 @@
             this.mauSo = 1;
         }
 
-        public PhanSo(int tuSo, int mauSo)
+        public PhanSo(int ts, int ms)
         {
             if (mauSo == 0)
                 throw new ArgumentException("Mau so khong duoc bang 0");
 
-            this.tuSo = tuSo;
-            this.mauSo = mauSo;
+            this.tuSo = ts;
+            this.mauSo = ms;
             RutGon();
         }
 
